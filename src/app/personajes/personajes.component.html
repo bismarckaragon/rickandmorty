@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="search">
+  <input
+    #searching
+    type="text"
+    placeholder="Busca tu personaje"
+    (keyup)="onFiltrarPersonaje(searching.value)"
+  />
+</div>
+
+<div class="contenedor">
+  <div class="card" *ngFor="let personaje of personajes">
+    <h1>{{ personaje.name }}</h1>
+    <img src="{{ personaje.image }}" alt="" />
+    <div>
+      <span>{{ personaje.gender }}</span
+      ><span>{{ personaje.status }}</span
+      ><span>{{ personaje.species }}</span>
+    </div>
+  </div>
+</div>

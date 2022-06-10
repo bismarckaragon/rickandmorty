@@ -1,0 +1,48 @@
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 40px;
+  justify-content: center;
+  .card {
+    h1 {
+      margin: 0 auto;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 100%;
+    }
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: #fff;
+    width: 300px;
+    div {
+      display: flex;
+      justify-content: space-around;
+
+      span {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  input {
+    color: #fff;
+    height: 50px;
+    width: 80%;
+    border-radius: 20px;
+    padding: 0px 30px;
+    font-size: 24px;
+    background-color: black;
+    border: 1px #555 solid;
+    margin: 0 auto;
+  }
+}
